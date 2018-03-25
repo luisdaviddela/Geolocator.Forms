@@ -12,40 +12,40 @@ namespace Location_Dependency
         iMyLocation loc;
         public App ()
 		{
-            //InitializeComponent();
-            //MainPage = new Location_Dependency.LocationPage();
-            var btn = new Button()
-            {
-                Text = "Visit on internet"
-            };
+            InitializeComponent();
+            MainPage = new Location_Dependency.LocationPage();
+            //var btn = new Button()
+            //{
+            //    Text = "Visit on internet"
+            //};
 
-            lblLat = new Label
-            {
-                XAlign = TextAlignment.Center,
-                Text = "Lat",
-            };
-            lblLng = new Label
-            {
-                XAlign = TextAlignment.Center,
-                Text = "Lng",
-            };
-            btn.Clicked += NewUri;
-            MainPage = new ContentPage
-            {
-                Content = new StackLayout
-                {
-                    VerticalOptions = LayoutOptions.Center,
-                    Children = {
-                        new Label {
-                            XAlign = TextAlignment.Center,
-                            Text = "Current Live Location"
-                        },
-                        lblLat,
-                        lblLng,
-                        btn
-                    }
-                }
-            };
+            //lblLat = new Label
+            //{
+            //    XAlign = TextAlignment.Center,
+            //    Text = "Lat",
+            //};
+            //lblLng = new Label
+            //{
+            //    XAlign = TextAlignment.Center,
+            //    Text = "Lng",
+            //};
+            //btn.Clicked += NewUri;
+            //MainPage = new ContentPage
+            //{
+            //    Content = new StackLayout
+            //    {
+            //        VerticalOptions = LayoutOptions.Center,
+            //        Children = {
+            //            new Label {
+            //                XAlign = TextAlignment.Center,
+            //                Text = "Current Live Location"
+            //            },
+            //            lblLat,
+            //            lblLng,
+            //            btn
+            //        }
+            //    }
+            //};
         }
         private void NewUri(object sender, EventArgs e)
         {
