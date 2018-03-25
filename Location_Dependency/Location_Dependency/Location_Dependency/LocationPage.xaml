@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="My current location"
              x:Class="Location_Dependency.LocationPage">
     <ContentPage.Content>
         <StackLayout Spacing="30" Padding="20">
@@ -8,6 +9,7 @@
             <Label x:Name="lblLat"/>
             <Label Text="Latitud"/>
             <Label x:Name="lblLng"/>
+            <Button Text="XamSharp location" Clicked="btn_click" TextColor="Black" BackgroundColor="DarkGray"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

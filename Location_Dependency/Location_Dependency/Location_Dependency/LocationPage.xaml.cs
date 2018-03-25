@@ -31,5 +31,21 @@ namespace Location_Dependency
                 };
             loc.ObtainMyLocation();
         }
+        private void btn_click(object sender, EventArgs e)
+        {
+            string unlessnotuniqueUri = "https://www.latlong.net/c/?lat=" + lblLat.Text + "&long=" + lblLng.Text;
+
+
+            string Uri = unlessnotuniqueUri.Replace(',', '.');
+            try
+            {
+                Device.OpenUri(new Uri(Uri));
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
     }
 }
